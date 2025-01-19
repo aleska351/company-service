@@ -2,8 +2,7 @@ package com.codingdrama.companyservice.controller;
 
 
 import com.codingdrama.companyservice.dto.CompanyDto;
-import com.codingdrama.companyservice.entity.Company;
-import com.codingdrama.companyservice.repository.CompanyService;
+import com.codingdrama.companyservice.service.CompanyServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,7 +20,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/companies")
 public class CompanyController {
-    private final CompanyService companyService;
+    private final CompanyServiceImpl companyService;
 
     @GetMapping
     public ResponseEntity<List<CompanyDto>> getAllCompanies() {

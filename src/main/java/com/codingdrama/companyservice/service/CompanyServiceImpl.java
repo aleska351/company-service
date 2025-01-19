@@ -1,8 +1,9 @@
-package com.codingdrama.companyservice.repository;
+package com.codingdrama.companyservice.service;
 
 import com.codingdrama.companyservice.dto.CompanyDto;
 import com.codingdrama.companyservice.entity.Company;
 import com.codingdrama.companyservice.exceptions.LocalizedResponseStatusException;
+import com.codingdrama.companyservice.repository.CompanyRepository;
 import com.codingdrama.companyservice.util.Util;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -16,24 +17,27 @@ import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
-public class CompanyService {
+public class CompanyServiceImpl implements CompanyService {
     private final CompanyRepository companyRepository;
     private final ModelMapper modelMapper;
     
+    @Override
     public List<CompanyDto> getAllCompanies() {
         return companyRepository.findAll().stream().map(company -> modelMapper.map(company, CompanyDto.class)).collect(Collectors.toList());
     }
-
+    
+    @Override
     public Optional<CompanyDto> getCompanyById(Long id) {
         return companyRepository.findById(id).map(company -> modelMapper.map(company, CompanyDto.class));
     }
 
+    @Override
     public CompanyDto createCompany(CompanyDto companyDto) {
          Company company = modelMapper.map(companyDto, Company.class);
         return modelMapper.map(companyRepository.save(company), CompanyDto.class);
     }
     
-    
+    @Override
     public CompanyDto updateCompany(Long id, CompanyDto companyDTO) {
         Company existingCompany = companyRepository.findById(id)
                 .orElseThrow(() -> new LocalizedResponseStatusException(HttpStatus.NOT_FOUND, "company.not.found"));
@@ -43,6 +47,7 @@ public class CompanyService {
         return modelMapper.map(companyRepository.save(existingCompany), CompanyDto.class);
     }
 
+    @Override
     public void deleteCompany(Long id) {
         companyRepository.deleteById(id);
     }

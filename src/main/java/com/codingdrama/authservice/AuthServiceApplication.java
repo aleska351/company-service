@@ -1,13 +1,13 @@
-package com.codingdrama.companyservice;
+package com.codingdrama.authservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CompanyServiceApplication {
+public class AuthServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CompanyServiceApplication.class, args);
+        SpringApplication.run(AuthServiceApplication.class, args);
     }
 
 }

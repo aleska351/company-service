@@ -1,4 +1,4 @@
-package com.codingdrama.companyservice.dto;
+package com.codingdrama.authservice.dto;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

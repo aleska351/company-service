@@ -1,10 +1,10 @@
-package com.codingdrama.companyservice.service;
+package com.codingdrama.authservice.service;
 
-import com.codingdrama.companyservice.dto.CompanyDto;
-import com.codingdrama.companyservice.entity.Company;
-import com.codingdrama.companyservice.exceptions.LocalizedResponseStatusException;
-import com.codingdrama.companyservice.repository.CompanyRepository;
-import com.codingdrama.companyservice.util.Util;
+import com.codingdrama.authservice.dto.CompanyDto;
+import com.codingdrama.authservice.entity.Company;
+import com.codingdrama.authservice.exceptions.LocalizedResponseStatusException;
+import com.codingdrama.authservice.repository.CompanyRepository;
+import com.codingdrama.authservice.util.Util;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;

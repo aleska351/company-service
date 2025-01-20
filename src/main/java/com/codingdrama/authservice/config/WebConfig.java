@@ -1,4 +1,4 @@
-package com.codingdrama.companyservice.config;
+package com.codingdrama.authservice.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.MessageSource;

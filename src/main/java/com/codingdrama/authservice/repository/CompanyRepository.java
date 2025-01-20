@@ -1,6 +1,6 @@
-package com.codingdrama.companyservice.repository;
+package com.codingdrama.authservice.repository;
 
-import com.codingdrama.companyservice.entity.Company;
+import com.codingdrama.authservice.entity.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CompanyRepository extends JpaRepository<Company, Long> {

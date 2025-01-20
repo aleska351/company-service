@@ -1,4 +1,4 @@
-package com.codingdrama.companyservice.entity;
+package com.codingdrama.authservice.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

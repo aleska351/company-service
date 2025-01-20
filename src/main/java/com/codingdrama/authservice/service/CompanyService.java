@@ -1,6 +1,6 @@
-package com.codingdrama.companyservice.service;
+package com.codingdrama.authservice.service;
 
-import com.codingdrama.companyservice.dto.CompanyDto;
+import com.codingdrama.authservice.dto.CompanyDto;
 
 import java.util.List;
 import java.util.Optional;

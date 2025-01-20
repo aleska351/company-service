@@ -1,4 +1,4 @@
-package com.codingdrama.companyservice.exceptions;
+package com.codingdrama.authservice.exceptions;
 
 import lombok.Getter;
 import lombok.Setter;

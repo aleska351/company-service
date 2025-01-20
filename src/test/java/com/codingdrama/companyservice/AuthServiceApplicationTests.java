@@ -1,4 +1,4 @@
-package com.codingdrama.companyservice;
+package com.codingdrama.authservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

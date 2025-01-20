@@ -1,4 +1,4 @@
-package com.codingdrama.companyservice.util;
+package com.codingdrama.authservice.util;
 
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;

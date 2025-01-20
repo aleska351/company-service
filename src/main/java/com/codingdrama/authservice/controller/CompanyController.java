@@ -1,8 +1,8 @@
-package com.codingdrama.companyservice.controller;
+package com.codingdrama.authservice.controller;
 
 
-import com.codingdrama.companyservice.dto.CompanyDto;
-import com.codingdrama.companyservice.service.CompanyServiceImpl;
+import com.codingdrama.authservice.dto.CompanyDto;
+import com.codingdrama.authservice.service.CompanyServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
